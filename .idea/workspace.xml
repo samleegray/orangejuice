@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Embedded Posts in Discussions via routes.rb. Able to now create a new post directly from a Discussion with new post button. Editing is broken. The paths change for form based on if editing or creating new...How can I get around this?">
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Creating new posts in discussions &amp; editing them now works as expected.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/posts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,7 +301,7 @@
       <updated>1715038842802</updated>
       <workItem from="1715038843843" duration="6251000" />
       <workItem from="1715048044428" duration="2726000" />
-      <workItem from="1715126232763" duration="22973000" />
+      <workItem from="1715126232763" duration="23374000" />
     </task>
     <task id="LOCAL-00001" summary="Setup basic scaffolding for Forums, Categories, PostThreads, and Posts, along with their relationships between each other. Set root page to Forums index.">
       <option name="closed" value="true" />
@@ -418,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715205865209</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Creating new posts in discussions &amp; editing them now works as expected.">
+      <option name="closed" value="true" />
+      <created>1715207980326</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715207980326</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +444,8 @@
     <MESSAGE value="Fixed broken unit tests. Need to fix system test." />
     <MESSAGE value="Fixed broken system test. All tests now passing." />
     <MESSAGE value="Embedded Posts in Discussions via routes.rb. Able to now create a new post directly from a Discussion with new post button. Editing is broken. The paths change for form based on if editing or creating new...How can I get around this?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Embedded Posts in Discussions via routes.rb. Able to now create a new post directly from a Discussion with new post button. Editing is broken. The paths change for form based on if editing or creating new...How can I get around this?" />
+    <MESSAGE value="Creating new posts in discussions &amp; editing them now works as expected." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating new posts in discussions &amp; editing them now works as expected." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

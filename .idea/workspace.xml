@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Simply created Post scaffolding.">
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Added Discussions which contain Posts. Modified the index &amp; show of Discussions so they themselves are the buttons to view themselves. Viewing a Discussion shows it's posts. Modified most of the layouts to use base CSS classes for buttons that are simply named for their color. When creating a Post you select what Discussion it's a part of. That should be fixed next.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.tailwind.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/discussions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/discussions_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/post.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +303,7 @@
       <updated>1715038842802</updated>
       <workItem from="1715038843843" duration="6251000" />
       <workItem from="1715048044428" duration="2726000" />
-      <workItem from="1715126232763" duration="1798000" />
+      <workItem from="1715126232763" duration="3054000" />
     </task>
     <task id="LOCAL-00001" summary="Setup basic scaffolding for Forums, Categories, PostThreads, and Posts, along with their relationships between each other. Set root page to Forums index.">
       <option name="closed" value="true" />
@@ -354,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715114800679</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Discussions which contain Posts. Modified the index &amp; show of Discussions so they themselves are the buttons to view themselves. Viewing a Discussion shows it's posts. Modified most of the layouts to use base CSS classes for buttons that are simply named for their color. When creating a Post you select what Discussion it's a part of. That should be fixed next.">
+      <option name="closed" value="true" />
+      <created>1715133060988</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715133060988</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +365,8 @@
     <MESSAGE value="Added relationship between Posts &amp; Discussions." />
     <MESSAGE value="Made discussions root for now." />
     <MESSAGE value="Simply created Post scaffolding." />
-    <option name="LAST_COMMIT_MESSAGE" value="Simply created Post scaffolding." />
+    <MESSAGE value="Added Discussions which contain Posts. Modified the index &amp; show of Discussions so they themselves are the buttons to view themselves. Viewing a Discussion shows it's posts. Modified most of the layouts to use base CSS classes for buttons that are simply named for their color. When creating a Post you select what Discussion it's a part of. That should be fixed next." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Discussions which contain Posts. Modified the index &amp; show of Discussions so they themselves are the buttons to view themselves. Viewing a Discussion shows it's posts. Modified most of the layouts to use base CSS classes for buttons that are simply named for their color. When creating a Post you select what Discussion it's a part of. That should be fixed next." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

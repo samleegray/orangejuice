@@ -3,20 +3,24 @@ class PostsController < ApplicationController
 
   # GET /posts or /posts.json
   def index
+    @page_title = "Posts"
     @posts = Post.all
   end
 
   # GET /posts/1 or /posts/1.json
   def show
+    @page_title = @post.discussion.title
   end
 
   # GET /posts/new
   def new
+    @page_title = "New Post"
     @post = Post.new
   end
 
   # GET /posts/1/edit
   def edit
+    @page_title = "Edit | " + @post.discussion.title
   end
 
   # POST /posts or /posts.json

@@ -3,20 +3,24 @@ class DiscussionsController < ApplicationController
 
   # GET /discussions or /discussions.json
   def index
+    @page_title = "Discussions"
     @discussions = Discussion.all
   end
 
   # GET /discussions/1 or /discussions/1.json
   def show
+    @page_title = @discussion.title
   end
 
   # GET /discussions/new
   def new
+    @page_title = "New Discussion"
     @discussion = Discussion.new
   end
 
   # GET /discussions/1/edit
   def edit
+    @page_title = "Edit | #{@discussion.title}"
   end
 
   # POST /discussions or /discussions.json

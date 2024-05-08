@@ -13,10 +13,16 @@
 
   <div class="my-5">
     <%= form.label :text %>
-    <%= form.text_area :text, rows: 4, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_area :text, rows: 4, class: "input-field" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :discussion_id %>
+    <%= form.collection_select :discussion_id, Discussion.all, :id, :title, { prompt: true },
+                               { class: "input-field" } %>
   </div>
 
   <div class="inline">
-    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+    <%= form.submit class: "good-button" %>
   </div>
 <% end %>

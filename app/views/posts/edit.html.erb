@@ -3,6 +3,6 @@
 
   <%= render "form", post: @post %>
 
-  <%= link_to "Show this post", @post, class: "nav-button" %>
+  <%= link_to "Show this post", discussion_post_path(@post.discussion), class: "nav-button" %>
   <%= link_to "Back to posts", discussion_post_path(@post.discussion), class: "nav-button" %>
 </div>

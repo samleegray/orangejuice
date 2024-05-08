@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   resources :discussions do
-    resources :posts, except: [:destroy]
+    resources :posts
   end
-  resources :posts, only: [:destroy]
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # Root is Discussions for now
   root "discussions#index"

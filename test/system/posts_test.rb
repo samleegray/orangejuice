@@ -15,6 +15,7 @@ class PostsTest < ApplicationSystemTestCase
     click_on "New post"
 
     fill_in "Text", with: @post.text
+    select 'First Discussion', from: 'Discussion'
     click_on "Create Post"
 
     assert_text "Post was successfully created"

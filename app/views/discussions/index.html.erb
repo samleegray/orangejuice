@@ -11,8 +11,13 @@
   </div>
 
   <div id="discussions" class="min-w-full">
+<!--     Can be done one of two ways-->
+      <%#= render partial: "discussion", collection: @discussions, spacer_template: 'shared/spacer' %>
+<!--      or...(with each do X)-->
+
     <% @discussions.each do |discussion| %>
       <%= render discussion %>
+      <br />
     <% end %>
   </div>
 </div>

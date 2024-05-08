@@ -12,7 +12,7 @@
 
     <div class="mt-5">
       <h2 class="font-medium">Posts</h2>
-      <%= render @discussion.posts %>
+      <%= render @discussion.posts.order(created_at: :desc) %>
     </div>
 
     <%= link_to "Edit this discussion", edit_discussion_path(@discussion), class: "nav-button" %>

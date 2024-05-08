@@ -12,10 +12,14 @@
 
   <div id="posts" class="min-w-full">
     <% @posts.each do |post| %>
-      <%= render post %>
-      <p>
-        <%= link_to "Show this post", post, class: "nav-button" %>
-      </p>
+      <div class="block shadow rounded-md bg-amber-100 font-light">
+        <%= link_to post do %>
+          <%= render post %>
+        <% end %>
+      </div>
+<!--      <p>-->
+        <%#= link_to "Show this post", post, class: "nav-button" %>
+<!--      </p>-->
     <% end %>
   </div>
 </div>

@@ -1,4 +1,4 @@
-<%= link_to post do %>
+<%= link_to discussion_post_path(id: post.id, discussion_id: post.discussion.id) do %>
   <div id="<%= dom_id post %>" class="block shadow rounded-md bg-amber-100 font-light">
     <p class="my-5">
       <%= post.text %>

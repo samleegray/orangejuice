@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
+  before_action :set_discussion, except: %i[ edit ]
 
   # GET /posts or /posts.json
   def index
@@ -16,6 +17,7 @@ class PostsController < ApplicationController
   def new
     @page_title = "New Post"
     @post = Post.new
+    @post.discussion = @discussion
   end
 
   # GET /posts/1/edit
@@ -29,7 +31,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to post_url(@post), notice: "Post was successfully created." }
+        format.html { redirect_to discussion_path(@post.discussion), notice: "Post was successfully created." }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -42,7 +44,7 @@ class PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to post_url(@post), notice: "Post was successfully updated." }
+        format.html { redirect_to discussion_url(@post.discussion), notice: "Post was successfully updated." }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -53,10 +55,11 @@ class PostsController < ApplicationController
 
   # DELETE /posts/1 or /posts/1.json
   def destroy
+    discussion = @post.discussion
     @post.destroy!
 
     respond_to do |format|
-      format.html { redirect_to posts_url, notice: "Post was successfully destroyed." }
+      format.html { redirect_to discussion_url(discussion), notice: "Post was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -66,6 +69,10 @@ class PostsController < ApplicationController
     def set_post
       @post = Post.find(params[:id])
     end
+
+  def set_discussion
+    @discussion = Discussion.find(params[:discussion_id])
+  end
 
     # Only allow a list of trusted parameters through.
     def post_params

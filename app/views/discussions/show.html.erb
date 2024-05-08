@@ -15,6 +15,7 @@
       <%= render @discussion.posts.order(created_at: :desc) %>
     </div>
 
+    <%= link_to "New post", new_discussion_post_path(@discussion), class: "good-button" %>
     <%= link_to "Edit this discussion", edit_discussion_path(@discussion), class: "nav-button" %>
     <%= link_to "Back to discussions", discussions_path, class: "nav-button" %>
     <div class="inline-block ml-2">

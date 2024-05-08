@@ -4,5 +4,5 @@
   <%= render "form", post: @post %>
 
   <%= link_to "Show this post", @post, class: "nav-button" %>
-  <%= link_to "Back to posts", posts_path, class: "nav-button" %>
+  <%= link_to "Back to posts", discussion_post_path(@post.discussion), class: "nav-button" %>
 </div>

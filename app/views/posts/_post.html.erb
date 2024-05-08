@@ -1,9 +1,11 @@
-<div id="<%= dom_id post %>">
-  <p class="my-5">
-    <%= post.text %>
-  </p>
-  <p>
-    Posted <%= time_ago_in_words(post.created_at) %> ago.
-  </p>
+<%= link_to post do %>
+  <div id="<%= dom_id post %>" class="block shadow rounded-md bg-amber-100 font-light">
+    <p class="my-5">
+      <%= post.text %>
+    </p>
+    <p>
+      Posted <%= time_ago_in_words(post.created_at) %> ago.
+    </p>
 
-</div>
+  </div>
+<% end %>

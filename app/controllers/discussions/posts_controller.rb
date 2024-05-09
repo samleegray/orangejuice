@@ -1,5 +1,6 @@
-class PostsController < ApplicationController
+class Discussions::PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
+  before_action :set_discussion
 
   # GET /posts or /posts.json
   def index
@@ -16,6 +17,7 @@ class PostsController < ApplicationController
   def new
     @page_title = "New Post"
     @post = Post.new
+    @post.discussion = @discussion
   end
 
   # GET /posts/1/edit
@@ -26,6 +28,7 @@ class PostsController < ApplicationController
   # POST /posts or /posts.json
   def create
     @post = Post.new(post_params)
+    @post.discussion = @discussion
 
     respond_to do |format|
       if @post.save
@@ -68,8 +71,12 @@ class PostsController < ApplicationController
       @post = Post.find(params[:id])
     end
 
+  def set_discussion
+    @discussion = Discussion.find(params[:discussion_id])
+  end
+
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:text)
+      params.require(:post).permit(:text, :discussion_id)
     end
 end

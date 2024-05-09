@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Creating new posts in discussions &amp; editing them now works as expected.">
+      <change afterPath="$PROJECT_DIR$/app/controllers/discussions/posts_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/discussions/post.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/_errors.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/_notice.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/discussions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/discussions/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/discussions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/discussions/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/posts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/_post.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/_post.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="start_post_structure" />
+        <entry key="$PROJECT_DIR$" value="nested_posts" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,7 +60,8 @@
   "keyToString": {
     "Rails.orangejuice.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "nested__posts",
+    "git-widget-placeholder": "nested__posts__module",
+    "last_opened_file_path": "/Users/samuelgray/Projects/rails/orangejuice/app/models/discussions",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -61,6 +73,10 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/models/discussions" />
+      <recent name="$PROJECT_DIR$/app/controllers/discussions" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/db" />
     </key>
@@ -301,7 +317,7 @@
       <updated>1715038842802</updated>
       <workItem from="1715038843843" duration="6251000" />
       <workItem from="1715048044428" duration="2726000" />
-      <workItem from="1715126232763" duration="23374000" />
+      <workItem from="1715126232763" duration="27627000" />
     </task>
     <task id="LOCAL-00001" summary="Setup basic scaffolding for Forums, Categories, PostThreads, and Posts, along with their relationships between each other. Set root page to Forums index.">
       <option name="closed" value="true" />
@@ -423,7 +439,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715207980326</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Creating new posts in discussions &amp; editing them now works as expected.">
+      <option name="closed" value="true" />
+      <created>1715208372298</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715208372298</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

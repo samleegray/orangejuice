@@ -4,8 +4,12 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one:
+  name: Alice
+  email: <%="alice#{rand(1000..9999)}@example.com"%>
+  password: "securepassword"
+
+two:
+  name: Bob
+  email: <%="bob#{rand(1000..9999)}@example.com"%>
+  password: "securepassword"

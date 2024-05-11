@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!
+  before_action :user_is_authorized_for_post
   before_action :set_post, only: %i[ show edit update destroy ]
 
   # GET /posts or /posts.json
@@ -72,5 +73,16 @@ class PostsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def post_params
       params.require(:post).permit(:text, :discussion_id)
+    end
+
+    def user_is_authorized_for_post
+      puts "SAMI: user_is_authorized_for_post #{current_user.is_admin?}"
+
+      unless current_user.is_admin?
+        respond_to do |format|
+          format.html { redirect_to root_url, notice: "You do not have access to this page." }
+          format.json { redirect_to root_url, status: :forbidden }
+        end
+      end
     end
 end

@@ -1,11 +1,14 @@
 require "test_helper"
 
 class DiscussionsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers # Rails >= 5
+
   setup do
     @discussion = discussions(:one)
   end
 
   test "should get index" do
+    sign_in users(:one)
     get discussions_url
     assert_response :success
   end

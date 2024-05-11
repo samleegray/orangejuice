@@ -8,6 +8,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   def is_admin?
+    return unless role
+
     role.name == 'admin'
+    
   end
 end

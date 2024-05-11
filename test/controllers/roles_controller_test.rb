@@ -39,6 +39,8 @@ class RolesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should destroy role" do
+    # change to using a role that is not used by any users in the fixtures
+    @role = roles(:editor)
     assert_difference("Role.count", -1) do
       delete role_url(@role)
     end

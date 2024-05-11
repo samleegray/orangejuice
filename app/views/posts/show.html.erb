@@ -4,10 +4,10 @@
 
     <%= render @post %>
 
-    <%= link_to "Edit this post", edit_discussion_post_path, class: "nav-button" %>
-    <%= link_to "Back to posts", discussion_path(@post.discussion), class: "nav-button" %>
+    <%= link_to "Edit this post", edit_post_path, class: "nav-button" %>
+    <%= link_to "Back to posts", posts_path, class: "nav-button" %>
     <div class="inline-block ml-2">
-      <%= button_to "Destroy this post", discussion_post_path, method: :delete, class: "bad-button" %>
+      <%= button_to "Destroy this post", post_path, method: :delete, class: "bad-button" %>
     </div>
   </div>
 </div>

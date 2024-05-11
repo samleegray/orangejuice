@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Created new Roles scaffolding, updated scaffolding to appear correctly like other views. Not hooked into User object yet.">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Removed unused fields from DB. Trying to get tests working.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/role.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/role.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/roles/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/roles/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/discussions_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/discussions_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/posts_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/posts_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/roles_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/roles_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/roles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/roles.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -575,7 +568,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715447201508</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Removed unused fields from DB. Trying to get tests working.">
+      <option name="closed" value="true" />
+      <created>1715450139083</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1715450139083</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,7 +605,8 @@
     <MESSAGE value="Unified theming for Discussions page. Looking good. Maybe it's time to add some Auth..." />
     <MESSAGE value="Integrated basic signup without requiring email confirmation for now. Next is to setup roles for users. Once I have that, I can try building out the Categories again and making it a &quot;real&quot; forum. Then I need to do search somehow as well...Maybe from the stuff I've been learning about indexing data in general will help?" />
     <MESSAGE value="Created new Roles scaffolding, updated scaffolding to appear correctly like other views. Not hooked into User object yet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created new Roles scaffolding, updated scaffolding to appear correctly like other views. Not hooked into User object yet." />
+    <MESSAGE value="Removed unused fields from DB. Trying to get tests working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unused fields from DB. Trying to get tests working." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

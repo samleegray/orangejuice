@@ -1,4 +1,4 @@
-require "test_helper"
+require 'test_helper'
 
 class DiscussionsControllerTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers # Rails >= 5
@@ -7,42 +7,46 @@ class DiscussionsControllerTest < ActionDispatch::IntegrationTest
     @discussion = discussions(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     sign_in users(:one)
     get discussions_url
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_discussion_url
     assert_response :success
   end
 
-  test "should create discussion" do
-    assert_difference("Discussion.count") do
+  test 'should create discussion' do
+    sign_in users(:one)
+    assert_difference('Discussion.count') do
       post discussions_url, params: { discussion: { description: @discussion.description, title: @discussion.title } }
     end
 
     assert_redirected_to discussion_url(Discussion.last)
   end
 
-  test "should show discussion" do
+  test 'should show discussion' do
+    sign_in users(:one)
     get discussion_url(@discussion)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
+    sign_in users(:one)
     get edit_discussion_url(@discussion)
     assert_response :success
   end
 
-  test "should update discussion" do
+  test 'should update discussion' do
     patch discussion_url(@discussion), params: { discussion: { description: @discussion.description, title: @discussion.title } }
     assert_redirected_to discussion_url(@discussion)
   end
 
-  test "should destroy discussion" do
-    assert_difference("Discussion.count", -1) do
+  test 'should destroy discussion' do
+    sign_in users(:one)
+    assert_difference('Discussion.count', -1) do
       delete discussion_url(@discussion)
     end
 

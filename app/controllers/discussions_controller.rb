@@ -1,6 +1,7 @@
 class DiscussionsController < ApplicationController
-  before_action :set_discussion, only: %i[ show edit update destroy ]
+  before_action :set_discussion, only: %i[show edit update destroy]
   before_action :set_user
+  before_action :user_owns_discussion, only: %i[edit update destroy]
 
   # GET /discussions or /discussions.json
   def index
@@ -77,5 +78,13 @@ class DiscussionsController < ApplicationController
 
   def set_user
     @user = current_user
+  end
+
+  def user_owns_discussion
+    return if current_user == @discussion.user
+
+    flash[:notice] = 'You are not authorized to do that.'
+    redirect_to @discussion
+
   end
 end

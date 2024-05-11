@@ -3,7 +3,9 @@
 one:
   text: MyText
   discussion: one
+  user: one
 
 two:
   text: MyText
   discussion: two
+  user: two

@@ -3,7 +3,9 @@
 one:
   title: First Discussion
   description: MyText
+  user: one
 
 two:
   title: Second Discussion
   description: MyText
+  user: two

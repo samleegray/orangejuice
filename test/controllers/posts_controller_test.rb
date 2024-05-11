@@ -13,6 +13,11 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test 'should not get index' do
+    get posts_url
+    assert_redirected_to new_user_session_url
+  end
+
   test 'should get new' do
     sign_in users(:one)
     get new_post_url
@@ -26,15 +31,8 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
                                                                       discussion_id: discussions(:one).id } }
     end
 
-  assert_redirected_to discussion_url(discussions(:one))
-end
-  # test "should create post" do
-  #   assert_difference("Post.count") do
-  #     post discussion_post_url, params: { post: { text: @post.text, discussion_id: discussions(:one).id } }
-  #   end
-  #
-  #   assert_redirected_to post_url(Post.last)
-  # end
+    assert_redirected_to discussion_url(discussions(:one))
+  end
 
   test 'should not show post' do
     get posts_url(@post)
@@ -42,7 +40,6 @@ end
   end
 
   test 'should show post' do
-    sign_in users(:one)
     get discussion_post_url(@post.discussion, @post)
     assert_response :success
   end

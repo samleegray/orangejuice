@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Now confirming the user owns the discussion or post on the controller level actions. Tossing them back to the discussion page if not.">
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Added more tests to discussions_controller_test.rb to confirm behavior of being redirected back to the discussion if you are not the owner of it.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/discussions_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/discussions_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/posts_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/posts_controller_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -615,14 +615,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715455771333</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Added more tests to discussions_controller_test.rb to confirm behavior of being redirected back to the discussion if you are not the owner of it.">
+      <option name="closed" value="true" />
+      <created>1715455963399</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1715455963399</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Made discussions root for now." />
     <MESSAGE value="Simply created Post scaffolding." />
     <MESSAGE value="Added Discussions which contain Posts. Modified the index &amp; show of Discussions so they themselves are the buttons to view themselves. Viewing a Discussion shows it's posts. Modified most of the layouts to use base CSS classes for buttons that are simply named for their color. When creating a Post you select what Discussion it's a part of. That should be fixed next." />
     <MESSAGE value="Changed root view to Discussions index. Implemented simple page Title helper &amp; populating it from the controllers." />
@@ -647,7 +654,8 @@
     <MESSAGE value="Making the cop happy with my Gemfile." />
     <MESSAGE value="Discussions &amp; posts now linked to Users. Only showing edit/destroy buttons on ones user owns. Need to confirm on delete &amp; edit actions themselves to be extra safe though." />
     <MESSAGE value="Now confirming the user owns the discussion or post on the controller level actions. Tossing them back to the discussion page if not." />
-    <option name="LAST_COMMIT_MESSAGE" value="Now confirming the user owns the discussion or post on the controller level actions. Tossing them back to the discussion page if not." />
+    <MESSAGE value="Added more tests to discussions_controller_test.rb to confirm behavior of being redirected back to the discussion if you are not the owner of it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more tests to discussions_controller_test.rb to confirm behavior of being redirected back to the discussion if you are not the owner of it." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

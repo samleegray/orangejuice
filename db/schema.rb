@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_11_182617) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_11_230449) do
   create_table "discussions", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -36,13 +36,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_11_182617) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "roles_users", id: false, force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "role_id", null: false
-    t.index ["role_id"], name: "index_roles_users_on_role_id"
-    t.index ["user_id"], name: "index_roles_users_on_user_id"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -51,11 +44,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_11_182617) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "role_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["role_id"], name: "index_users_on_role_id"
   end
 
   add_foreign_key "discussions", "users"
   add_foreign_key "posts", "discussions"
   add_foreign_key "posts", "users"
+  add_foreign_key "users", "roles"
 end

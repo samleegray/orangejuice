@@ -9,11 +9,11 @@ one:
   encrypted_password: <%= Devise::Encryptor.digest(User, 'password123') %>
   created_at: <%= Time.now %>
   updated_at: <%= Time.now %>
-  roles: admin, editor
+  role: admin
 
 two:
   email: anotheruser@example.com
   encrypted_password: <%= Devise::Encryptor.digest(User, 'password123') %>
   created_at: <%= Time.now %>
   updated_at: <%= Time.now %>
-  roles: guest
+  role: guest

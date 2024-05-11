@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_and_belongs_to_many :roles
+  belongs_to :role
   has_many :posts
   has_many :discussions
   # Include default devise modules. Others available are:
@@ -8,6 +8,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   def is_admin?
-    self.roles.where(name: 'admin').exists?
+    role.name == 'admin'
   end
 end

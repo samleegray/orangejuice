@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Broke out the navbar and footer sections into their own partials incase I need it like that in the future.">
-      <change beforePath="$PROJECT_DIR$/app/views/discussions/posts/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/discussions/posts/new.html.erb" afterDir="false" />
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Fixed button appearance.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f9ad372-00b2-403c-bd27-7005fac77002.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f9ad372-00b2-403c-bd27-7005fac77002.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/35095738-db74-4f5a-b34b-15ca25e7f864.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/35095738-db74-4f5a-b34b-15ca25e7f864.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/role.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/role.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orangejuice_test" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,25 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Rails.orangejuice.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Test::Unit/Shoulda/Minitest.PostsTest.executor": "Run",
-    "git-widget-placeholder": "user__posts",
-    "last_opened_file_path": "/Users/samuelgray/Projects/rails/orangejuice/app/models/discussions",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Rails.orangejuice.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Test::Unit/Shoulda/Minitest.PostsTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;user__posts&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/samuelgray/Projects/rails/orangejuice/app/models/discussions&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/models/discussions" />
@@ -387,6 +396,7 @@
       <workItem from="1715126232763" duration="32308000" />
       <workItem from="1715304695767" duration="2000" />
       <workItem from="1715386965437" duration="5485000" />
+      <workItem from="1715468363247" duration="484000" />
     </task>
     <task id="LOCAL-00001" summary="Setup basic scaffolding for Forums, Categories, PostThreads, and Posts, along with their relationships between each other. Set root page to Forums index.">
       <option name="closed" value="true" />
@@ -644,14 +654,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715459944787</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Fixed button appearance.">
+      <option name="closed" value="true" />
+      <created>1715463047935</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1715463047935</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed root view to Discussions index. Implemented simple page Title helper &amp; populating it from the controllers." />
     <MESSAGE value="Displaying relative time for posts. Update styling of posts via the Index page, removing the show buttons &amp; making the whole item(with new bg color) clickable." />
     <MESSAGE value="Moved logic for styling &amp; clickability out from Post index &amp; into the partial." />
     <MESSAGE value="Formatting." />
@@ -676,7 +693,8 @@
     <MESSAGE value="Added more tests to discussions_controller_test.rb to confirm behavior of being redirected back to the discussion if you are not the owner of it." />
     <MESSAGE value="Cleaned up posts_controller_test.rb tests and added a new one for confirming redirect if user attempts to go to /posts and is not an admin." />
     <MESSAGE value="Broke out the navbar and footer sections into their own partials incase I need it like that in the future." />
-    <option name="LAST_COMMIT_MESSAGE" value="Broke out the navbar and footer sections into their own partials incase I need it like that in the future." />
+    <MESSAGE value="Fixed button appearance." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed button appearance." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

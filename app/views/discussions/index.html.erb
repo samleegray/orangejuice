@@ -1,0 +1,12 @@
+<div class="w-full">
+  <%= render partial: 'shared/notice' %>
+
+  <div class="flex justify-between items-center m-5">
+    <h1 class="font-bold text-4xl text-white">Discussions</h1>
+    <%= link_to "New discussion", new_discussion_path, class: "good-button" %>
+  </div>
+
+  <div id="discussions" class="min-w-full">
+      <%= render partial: "discussion", collection: @discussions, spacer_template: 'shared/spacer' %>
+  </div>
+</div>

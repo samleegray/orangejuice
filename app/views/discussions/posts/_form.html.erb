@@ -1,0 +1,12 @@
+<%= form_with(model: [@discussion, @post], class: "contents") do |form| %>
+  <%= render partial: 'shared/errors', locals: { post: post } %>
+
+  <div class="my-5">
+    <%= form.label :text %>
+    <%= form.text_area :text, rows: 4, class: "input-field" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit class: "good-button" %>
+  </div>
+<% end %>

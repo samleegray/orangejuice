@@ -1,0 +1,10 @@
+<%= link_to post_path(id: post.id) do %>
+  <div id="<%= dom_id post %>" class="block shadow rounded-md bg-amber-100 font-light">
+    <p class="my-5">
+      <%= post.text %>
+    </p>
+    <p>
+      Posted <%= time_ago_in_words(post.created_at) %> ago in <%= post.discussion.title %>.
+    </p>
+  </div>
+<% end %>

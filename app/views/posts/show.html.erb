@@ -1,0 +1,13 @@
+<div class="mx-auto md:w-2/3 w-full flex">
+  <div class="mx-auto">
+    <%= render partial: 'shared/notice' %>
+
+    <%= render @post %>
+
+    <%= link_to "Edit this post", edit_post_path, class: "nav-button" %>
+    <%= link_to "Back to posts", posts_path, class: "nav-button" %>
+    <div class="inline-block ml-2">
+      <%= button_to "Destroy this post", post_path, method: :delete, class: "bad-button" %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="mx-auto w-full flex">
+  <div class="mx-auto">
+    <%= render partial: 'shared/notice' %>
+
+    <div class="content-center text-center text-white mt-5">
+      <h1 class="font-bold"><%= @discussion.title %></h1>
+      <p class="text-gray-300"><%= @discussion.description %></p>
+    </div>
+
+    <div class="mt-5">
+      <%= render partial: 'discussions/posts/post', collection: @discussion.posts.order(created_at: :desc) %>
+    </div>
+
+    <div class="flex m4 justify-between mb-5">
+      <%= link_to "New post", new_discussion_post_path(@discussion), class: "good-button" %>
+      <%= link_to "Edit this discussion", edit_discussion_path(@discussion), class: "nav-button" %>
+      <%= link_to "Back to discussions", discussions_path, class: "nav-button" %>
+      <%= button_to "Destroy this discussion", @discussion, method: :delete, class: "bad-button" %>
+    </div>
+  </div>
+</div>

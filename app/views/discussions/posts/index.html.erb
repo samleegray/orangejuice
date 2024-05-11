@@ -1,0 +1,18 @@
+<div class="w-full">
+  <% if notice.present? %>
+    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+  <% end %>
+
+  <% content_for :title, "Posts" %>
+
+  <div class="flex justify-between items-center">
+    <h1 class="font-bold text-4xl">Posts</h1>
+    <%= link_to "New post", new_discussion_post_path, class: "good-button" %>
+  </div>
+
+  <div id="posts" class="min-w-full">
+    <% @posts.each do |post| %>
+      <%= render post %>
+    <% end %>
+  </div>
+</div>

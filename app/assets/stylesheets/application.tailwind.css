@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-
 @layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
-  }
-}
+    .input-field { @apply
+        block shadow rounded-md border border-green-400 outline-none px-3 py-2 mt-2 w-full
+    }
 
-*/
+    .good-button { @apply
+        rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer
+    }
+
+    .bad-button { @apply
+        rounded-lg py-3 px-5 bg-red-600 text-white inline-block font-medium cursor-pointer
+    }
+
+    .nav-button { @apply
+        rounded-lg py-3 px-5 bg-gray-600 text-white inline-block font-medium cursor-pointer
+    }
+}

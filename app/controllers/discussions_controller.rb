@@ -5,7 +5,7 @@ class DiscussionsController < ApplicationController
 
   # GET /discussions or /discussions.json
   def index
-    @page_title = "Discussions"
+    @page_title = 'Discussions'
     @discussions = Discussion.all
   end
 
@@ -16,7 +16,7 @@ class DiscussionsController < ApplicationController
 
   # GET /discussions/new
   def new
-    @page_title = "New Discussion"
+    @page_title = 'New Discussion'
     @discussion = Discussion.new
     @discussion.user = @user
   end
@@ -33,7 +33,7 @@ class DiscussionsController < ApplicationController
 
     respond_to do |format|
       if @discussion.save
-        format.html { redirect_to discussion_url(@discussion), notice: "Discussion was successfully created." }
+        format.html { redirect_to discussion_url(@discussion), notice: 'Discussion was successfully created.' }
         format.json { render :show, status: :created, location: @discussion }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -46,7 +46,7 @@ class DiscussionsController < ApplicationController
   def update
     respond_to do |format|
       if @discussion.update(discussion_params)
-        format.html { redirect_to discussion_url(@discussion), notice: "Discussion was successfully updated." }
+        format.html { redirect_to discussion_url(@discussion), notice: 'Discussion was successfully updated.' }
         format.json { render :show, status: :ok, location: @discussion }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -60,7 +60,7 @@ class DiscussionsController < ApplicationController
     @discussion.destroy!
 
     respond_to do |format|
-      format.html { redirect_to discussions_url, notice: "Discussion was successfully destroyed." }
+      format.html { redirect_to discussions_url, notice: 'Discussion was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

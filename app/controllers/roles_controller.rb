@@ -1,5 +1,7 @@
 class RolesController < ApplicationController
   before_action :set_role, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
+  before_action :user_is_authorized_for_post
 
   # GET /roles or /roles.json
   def index
@@ -58,13 +60,23 @@ class RolesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_role
-      @role = Role.find(params[:id])
+  # Use callbacks to share common setup or constraints between actions.
+  def set_role
+    @role = Role.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def role_params
+    params.require(:role).permit(:name)
+  end
+
+  def user_is_authorized_for_post
+    return if current_user.is_admin?
+
+    respond_to do |format|
+      format.html { redirect_to root_url, notice: 'You do not have access to this page.' }
+      format.json { redirect_to root_url, status: :forbidden }
     end
 
-    # Only allow a list of trusted parameters through.
-    def role_params
-      params.require(:role).permit(:name)
-    end
+  end
 end

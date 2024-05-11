@@ -8,7 +8,6 @@ class DiscussionsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should get index' do
-    sign_in users(:one)
     get discussions_url
     assert_response :success
   end
@@ -33,6 +32,11 @@ class DiscussionsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test 'should not get edit' do
+    get edit_discussion_url(@discussion)
+    assert_redirected_to discussion_url(@discussion)
+  end
+
   test 'should get edit' do
     sign_in users(:one)
     get edit_discussion_url(@discussion)
@@ -51,5 +55,13 @@ class DiscussionsControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to discussions_url
+  end
+
+  test 'should not destroy discussion' do
+    assert_no_difference('Discussion.count') do
+      delete discussion_url(@discussion)
+    end
+
+    assert_redirected_to discussion_url(@discussion)
   end
 end

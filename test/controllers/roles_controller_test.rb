@@ -1,8 +1,11 @@
 require "test_helper"
 
 class RolesControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers # Rails >= 5
+
   setup do
     @role = roles(:admin)
+    sign_in users(:one)
   end
 
   test "should get index" do

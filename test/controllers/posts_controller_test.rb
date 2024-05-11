@@ -16,15 +16,22 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create post" do
-    assert_difference("Post.count") do
-      post posts_url, params: { post: { text: @post.text, discussion_id: discussions(:one).id } }
+    assert_difference('Post.count') do
+      post discussion_posts_url(discussions(:one)), params: { post: { text: @post.text, discussion_id: discussions(:one).id } }
     end
 
-    assert_redirected_to post_url(Post.last)
-  end
+  assert_redirected_to discussion_url(discussions(:one))
+end
+  # test "should create post" do
+  #   assert_difference("Post.count") do
+  #     post discussion_post_url, params: { post: { text: @post.text, discussion_id: discussions(:one).id } }
+  #   end
+  #
+  #   assert_redirected_to post_url(Post.last)
+  # end
 
   test "should show post" do
-    get post_url(@post)
+    get discussion_post_url(@post.discussion, @post)
     assert_response :success
   end
 
@@ -35,7 +42,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
 
   test "should update post" do
     patch post_url(@post), params: { post: { text: @post.text } }
-    assert_redirected_to post_url(@post)
+    assert_redirected_to discussion_url(@post.discussion)
   end
 
   test "should destroy post" do
@@ -43,6 +50,6 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
       delete post_url(@post)
     end
 
-    assert_redirected_to posts_url
+    assert_redirected_to discussion_path(@post.discussion)
   end
 end

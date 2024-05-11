@@ -6,6 +6,8 @@
     <p>
       Posted <%= time_ago_in_words(post.created_at) %> ago.
     </p>
-
+    <div id="post-actions" class="flex justify-left">
+      <%= link_to "Edit", edit_discussion_post_path(post.discussion, post), class: "nav-button" %>
+      <%= button_to "Destroy", discussion_post_path(post.discussion, post), method: :delete, class: "bad-button" %>
   </div>
 <% end %>

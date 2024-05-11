@@ -1,6 +1,7 @@
 class Discussions::PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
   before_action :set_discussion
+  before_action :set_user
 
   # GET /posts or /posts.json
   def index
@@ -18,6 +19,7 @@ class Discussions::PostsController < ApplicationController
     @page_title = "New Post"
     @post = Post.new
     @post.discussion = @discussion
+    @post.user = @user
   end
 
   # GET /posts/1/edit
@@ -29,6 +31,7 @@ class Discussions::PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.discussion = @discussion
+    @post.user = @user
 
     respond_to do |format|
       if @post.save
@@ -66,17 +69,21 @@ class Discussions::PostsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_post
-      @post = Post.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_post
+    @post = Post.find(params[:id])
+  end
 
   def set_discussion
     @discussion = Discussion.find(params[:discussion_id])
   end
 
-    # Only allow a list of trusted parameters through.
-    def post_params
-      params.require(:post).permit(:text, :discussion_id)
-    end
+  def set_user
+    @user = current_user
+  end
+
+  # Only allow a list of trusted parameters through.
+  def post_params
+    params.require(:post).permit(:text, :discussion_id)
+  end
 end

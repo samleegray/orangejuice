@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 
   # GET /posts or /posts.json
   def index
-    @page_title = "Posts"
+    @page_title = 'Posts'
     @posts = Post.all.order(created_at: :desc)
   end
 
@@ -16,13 +16,13 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @page_title = "New Post"
+    @page_title = 'New Post'
     @post = Post.new
   end
 
   # GET /posts/1/edit
   def edit
-    @page_title = "Edit | " + @post.discussion.title
+    @page_title = 'Edit | ' + @post.discussion.title
   end
 
   # POST /posts or /posts.json
@@ -31,7 +31,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to discussion_path(@post.discussion), notice: "Post was successfully created." }
+        format.html { redirect_to discussion_path(@post.discussion), notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -44,7 +44,7 @@ class PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to discussion_url(@post.discussion), notice: "Post was successfully updated." }
+        format.html { redirect_to discussion_url(@post.discussion), notice: 'Post was successfully updated.' }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -59,30 +59,32 @@ class PostsController < ApplicationController
     @post.destroy!
 
     respond_to do |format|
-      format.html { redirect_to discussion_url(discussion), notice: "Post was successfully destroyed." }
+      format.html { redirect_to discussion_url(discussion), notice: 'Post was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_post
-      @post = Post.find(params[:id])
+
+  # Use callbacks to share common setup or constraints between actions.
+  def set_post
+    @post = Post.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def post_params
+    params.require(:post).permit(:text, :discussion_id)
+  end
+
+  def user_is_authorized_for_post
+    puts "SAMI: user_is_authorized_for_post #{current_user.is_admin?}"
+
+    return if current_user.is_admin?
+
+    respond_to do |format|
+      format.html { redirect_to root_url, notice: 'You do not have access to this page.' }
+      format.json { redirect_to root_url, status: :forbidden }
     end
 
-    # Only allow a list of trusted parameters through.
-    def post_params
-      params.require(:post).permit(:text, :discussion_id)
-    end
-
-    def user_is_authorized_for_post
-      puts "SAMI: user_is_authorized_for_post #{current_user.is_admin?}"
-
-      unless current_user.is_admin?
-        respond_to do |format|
-          format.html { redirect_to root_url, notice: "You do not have access to this page." }
-          format.json { redirect_to root_url, status: :forbidden }
-        end
-      end
-    end
+  end
 end

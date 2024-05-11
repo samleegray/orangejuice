@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_11_174429) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_11_182617) do
   create_table "discussions", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_discussions_on_user_id"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -23,7 +25,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_11_174429) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "discussion_id", null: false
+    t.integer "user_id", null: false
     t.index ["discussion_id"], name: "index_posts_on_discussion_id"
+    t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "roles", force: :cascade do |t|
@@ -51,5 +55,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_11_174429) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "discussions", "users"
   add_foreign_key "posts", "discussions"
+  add_foreign_key "posts", "users"
 end

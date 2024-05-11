@@ -1,0 +1,22 @@
+<%= form_with(model: role, class: "contents") do |form| %>
+  <% if role.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(role.errors.count, "error") %> prohibited this role from being saved:</h2>
+
+      <ul>
+        <% role.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "input-field" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit class: "good-button" %>
+  </div>
+<% end %>

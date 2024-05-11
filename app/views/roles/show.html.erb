@@ -5,6 +5,14 @@
     <% end %>
 
     <%= render @role %>
+    <% for user in @role.users do %>
+      <div class="mt-5">
+        <h2 class="text-lg font-semibold">Users with this role</h2>
+        <ul>
+          <li><%= user.email %></li>
+        </ul>
+      </div>
+    <% end %>
 
     <%= link_to "Edit this role", edit_role_path(@role), class: "good-button" %>
     <%= link_to "Back to roles", roles_path, class: "nav-button" %>

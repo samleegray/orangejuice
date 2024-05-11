@@ -12,10 +12,14 @@
     </div>
 
     <div class="flex m4 justify-between mb-5">
-      <%= link_to "New post", new_discussion_post_path(@discussion), class: "good-button" %>
-      <%= link_to "Edit this discussion", edit_discussion_path(@discussion), class: "nav-button" %>
-      <%= link_to "Back to discussions", discussions_path, class: "nav-button" %>
-      <%= button_to "Destroy this discussion", @discussion, method: :delete, class: "bad-button" %>
+      <% if user_signed_in? %>
+        <%= link_to "New post", new_discussion_post_path(@discussion), class: "good-button" %>
+        <%= link_to "Edit this discussion", edit_discussion_path(@discussion), class: "nav-button" %>
+        <%= link_to "Back to discussions", discussions_path, class: "nav-button" %>
+        <%= button_to "Destroy this discussion", @discussion, method: :delete, class: "bad-button" %>
+      <% else %>
+        <%= link_to "Back to discussions", discussions_path, class: "nav-button" %>
+      <% end %>
     </div>
   </div>
 </div>

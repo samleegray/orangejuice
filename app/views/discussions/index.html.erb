@@ -3,7 +3,9 @@
 
   <div class="flex justify-between items-center m-5">
     <h1 class="font-bold text-4xl text-white">Discussions</h1>
-    <%= link_to "New discussion", new_discussion_path, class: "good-button" %>
+    <% if user_signed_in? %>
+      <%= link_to "New discussion", new_discussion_path, class: "good-button" %>
+    <% end %>
   </div>
 
   <div id="discussions" class="min-w-full">

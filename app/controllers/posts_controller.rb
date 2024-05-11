@@ -77,8 +77,6 @@ class PostsController < ApplicationController
   end
 
   def user_is_authorized_for_post
-    puts "SAMI: user_is_authorized_for_post #{current_user.is_admin?}"
-
     return if current_user.is_admin?
 
     respond_to do |format|

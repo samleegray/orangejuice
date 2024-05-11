@@ -18,6 +18,12 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to new_user_session_url
   end
 
+  test 'should not get index not admin' do
+    sign_in users(:two)
+    get posts_url
+    assert_redirected_to root_url
+  end
+
   test 'should get new' do
     sign_in users(:one)
     get new_post_url

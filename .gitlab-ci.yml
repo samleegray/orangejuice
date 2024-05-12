@@ -1,3 +1,6 @@
+variables:
+    MINIMUM_COVERAGE: 80
+
 stages:
   - setup
   - validation
@@ -30,3 +33,29 @@ run_tests:
     - .base_setup
   script:
     - bundle exec rake test
+  artifacts:
+    paths:
+      - coverage/coverage.json
+
+tests_coverage:
+  stage: coverage
+  script:
+    - >
+      if ! command -v jq &> /dev/null; then
+        apt-get update && apt-get install -y jq
+      fi
+    - covered_percent=$(cat coverage/coverage.json | jq -r '.metrics.covered_percent')
+    - re='^[+-]?[0-9]+([.||,][0-9]+)?$'
+    - >
+      if ! [[ $covered_percent =~ $re ]]; then 
+        echo "WARNING :: Couldn't get coverage from artifact."
+        exit 0
+      fi
+    - required_coverage=$MINIMUM_COVERAGE
+    - >
+      if [ $covered_percent -le $required_coverage ]; then
+        echo "Coverage ($covered_percent%) is below the required threshold of $required_coverage%."
+        exit 1
+      else
+        echo "Coverage ($covered_percent%) passed the required threshold of $required_coverage%."
+      fi

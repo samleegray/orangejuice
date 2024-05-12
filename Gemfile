@@ -74,3 +74,7 @@ group :test do
 end
 
 gem 'devise', '~> 4.9'
+
+gem "simplecov", "~> 0.22.0"
+
+gem "simplecov-json", "~> 0.2.3"

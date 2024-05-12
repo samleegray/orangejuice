@@ -30,4 +30,4 @@ run_tests:
     - .base_setup
   script:
     - bundle install
-    - rails test
+    - ./bin/rails test

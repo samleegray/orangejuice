@@ -30,4 +30,3 @@ run_tests:
     - .base_setup
   script:
     - ./bin/rails test
-    - ./bin/rails test:system

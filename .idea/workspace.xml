@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Got it to run normal tests, what about system tests?">
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Got it to run normal tests, what about system tests? Do I need bundle install?">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -727,7 +728,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715546327895</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Got it to run normal tests, what about system tests? Do I need bundle install?">
+      <option name="closed" value="true" />
+      <created>1715546346563</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1715546346563</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -745,7 +754,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Comments if I need something. Changed layout of Discussions to be edge to edge. Spacer added and used in partial rendering now by collection instead of loop." />
     <MESSAGE value="Fixed tests, with some help from GPT." />
     <MESSAGE value="Updated look &amp; feel of the site thanks to GPT's help once again for styling purposes. New Edit &amp; Destroy buttons directly on posts." />
     <MESSAGE value="Unified theming for Discussions page. Looking good. Maybe it's time to add some Auth..." />
@@ -770,7 +778,8 @@
     <MESSAGE value="Bundle install in run_tests." />
     <MESSAGE value="Trying to get it to run tests..." />
     <MESSAGE value="Got it to run normal tests, what about system tests?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got it to run normal tests, what about system tests?" />
+    <MESSAGE value="Got it to run normal tests, what about system tests? Do I need bundle install?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got it to run normal tests, what about system tests? Do I need bundle install?" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

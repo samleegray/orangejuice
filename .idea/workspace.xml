@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Bundle install in run_tests.">
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Trying to get it to run tests...">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/application_system_test_case.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -712,7 +715,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715545808786</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Trying to get it to run tests...">
+      <option name="closed" value="true" />
+      <created>1715546019590</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1715546019590</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -730,7 +741,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creating new posts in discussions &amp; editing them now works as expected." />
     <MESSAGE value="Embeded Post controller and views. Allows for dynamic use of Posts endpoints still, while also having them embedded/nested in Discussions still. Very cool. Had to specify specific partial to use for rendering posts themselves, but outside of that it seems like things are automatically hooked up correctly to use the template files from embedded or not embedded. This allows me to change style/details on posts independently of how they show up in Discussions. Separated out notice &amp; errors into their own shared partials to help cleanup the templates." />
     <MESSAGE value="Comments if I need something. Changed layout of Discussions to be edge to edge. Spacer added and used in partial rendering now by collection instead of loop." />
     <MESSAGE value="Fixed tests, with some help from GPT." />
@@ -755,7 +765,8 @@
     <MESSAGE value="Fixed broken system tests. Should probably add more surrounding the cases of not signed in though." />
     <MESSAGE value="Trying to get Gitlab CI working." />
     <MESSAGE value="Bundle install in run_tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Bundle install in run_tests." />
+    <MESSAGE value="Trying to get it to run tests..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to get it to run tests..." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

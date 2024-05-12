@@ -31,3 +31,4 @@ run_tests:
   script:
     - bundle install
     - ./bin/rails test
+    - ./bin/rails test:system

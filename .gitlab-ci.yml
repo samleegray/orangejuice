@@ -59,3 +59,7 @@ tests_coverage:
       else
         echo "Coverage ($covered_percent%) passed the required threshold of $required_coverage%."
       fi
+  artifacts:
+    when: always
+    paths:
+      - coverage/coverage.xml

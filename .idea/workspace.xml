@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Minor change just to confirm my change fixed the tests/caching.">
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Code coverage addition.">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/coverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/coverage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
@@ -398,14 +401,6 @@
       <workItem from="1715386965437" duration="5485000" />
       <workItem from="1715468363247" duration="2382000" />
     </task>
-    <task id="LOCAL-00002" summary="Trying to fix broken tests...">
-      <option name="closed" value="true" />
-      <created>1715047971427</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1715047971427</updated>
-    </task>
     <task id="LOCAL-00003" summary="Added relationship between Posts &amp; Discussions.">
       <option name="closed" value="true" />
       <created>1715050239667</created>
@@ -790,7 +785,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715549763077</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Code coverage addition.">
+      <option name="closed" value="true" />
+      <created>1715551175064</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1715551175064</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -808,7 +811,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Including new 'rubocop' to help me better structure my code/go by the typical standards." />
     <MESSAGE value="Making the cop happy with my Gemfile." />
     <MESSAGE value="Discussions &amp; posts now linked to Users. Only showing edit/destroy buttons on ones user owns. Need to confirm on delete &amp; edit actions themselves to be extra safe though." />
     <MESSAGE value="Now confirming the user owns the discussion or post on the controller level actions. Tossing them back to the discussion page if not." />
@@ -833,7 +835,8 @@
     <MESSAGE value="Bundle install script step in run_tests." />
     <MESSAGE value="Trying to get it to use the cache." />
     <MESSAGE value="Minor change just to confirm my change fixed the tests/caching." />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor change just to confirm my change fixed the tests/caching." />
+    <MESSAGE value="Code coverage addition." />
+    <option name="LAST_COMMIT_MESSAGE" value="Code coverage addition." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

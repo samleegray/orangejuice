@@ -78,3 +78,5 @@ gem 'devise', '~> 4.9'
 gem "simplecov", "~> 0.22.0"
 
 gem "simplecov-json", "~> 0.2.3"
+
+gem "simplecov-cobertura", "~> 2.1"

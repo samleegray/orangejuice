@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Rake test?">
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Trying to use cached info between stages.">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-wal" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -754,7 +752,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715546864248</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Trying to use cached info between stages.">
+      <option name="closed" value="true" />
+      <created>1715547882355</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1715547882355</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -772,7 +778,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Unified theming for Discussions page. Looking good. Maybe it's time to add some Auth..." />
     <MESSAGE value="Integrated basic signup without requiring email confirmation for now. Next is to setup roles for users. Once I have that, I can try building out the Categories again and making it a &quot;real&quot; forum. Then I need to do search somehow as well...Maybe from the stuff I've been learning about indexing data in general will help?" />
     <MESSAGE value="Created new Roles scaffolding, updated scaffolding to appear correctly like other views. Not hooked into User object yet." />
     <MESSAGE value="Removed unused fields from DB. Trying to get tests working." />
@@ -797,7 +802,8 @@
     <MESSAGE value="Got it to run normal tests, what about system tests? Do I need bundle install?" />
     <MESSAGE value="Just the rails test..." />
     <MESSAGE value="Rake test?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rake test?" />
+    <MESSAGE value="Trying to use cached info between stages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to use cached info between stages." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

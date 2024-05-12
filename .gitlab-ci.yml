@@ -73,5 +73,6 @@ heroku_deploy:
     - if: $CI_COMMIT_BRANCH == "main"
   script:
     - echo "Deploying to Heroku...'$HEROKU_API_KEY'"
+    - echo "https://heroku:$HEROKU_API_KEY@git.heroku.com/orangejuice.git"
     - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/orangejuice.git
     - git push --force heroku main:main

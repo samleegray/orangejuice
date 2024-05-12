@@ -28,12 +28,6 @@ run_tests:
   stage: validation
   extends:
     - .base_setup
-  cache:
-    key:
-      files:
-        - Gemfile.lock
-    paths:
-      - ./api/vendor/ruby
-    policy: pull
   script:
+    - bundle install
     - bundle exec rake test

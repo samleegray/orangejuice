@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Locked rolls down so only Admins can access it. Will add functionality to add a user to roles. Or should I go and modify the user controller / generate it so I can?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/roles_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/roles_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/discussions_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/discussions_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/posts_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/posts_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/roles_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/roles_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Test::Unit/Shoulda/Minitest.PostsTest.executor": "Run",
-    "git-widget-placeholder": "user__single__role",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/samuelgray/Projects/rails/orangejuice/app/models/discussions",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -693,6 +696,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed broken unit tests. Need to fix system test." />

@@ -1,8 +1,11 @@
 require "application_system_test_case"
 
 class PostsTest < ApplicationSystemTestCase
+  include Devise::Test::IntegrationHelpers # Rails >= 5
+
   setup do
     @post = posts(:one)
+    sign_in users(:one)
   end
 
   test "visiting the index" do
@@ -11,7 +14,8 @@ class PostsTest < ApplicationSystemTestCase
   end
 
   test "should create post" do
-    visit posts_url
+    sign_in users(:one)
+    visit posts_url(@post, user: users(:one))
     click_on "New post"
 
     fill_in "Text", with: @post.text

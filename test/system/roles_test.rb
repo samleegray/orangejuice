@@ -1,8 +1,11 @@
 require "application_system_test_case"
 
 class RolesTest < ApplicationSystemTestCase
+  include Devise::Test::IntegrationHelpers # Rails >= 5
+
   setup do
-    @role = roles(:one)
+    @role = roles(:admin)
+    sign_in users(:one)
   end
 
   test "visiting the index" do
@@ -33,6 +36,7 @@ class RolesTest < ApplicationSystemTestCase
   end
 
   test "should destroy Role" do
+    @role = roles(:editor)
     visit role_url(@role)
     click_on "Destroy this role", match: :first
 

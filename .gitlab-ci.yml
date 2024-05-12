@@ -61,5 +61,7 @@ tests_coverage:
       fi
   artifacts:
     when: always
-    paths:
-      - coverage/coverage.xml
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/coverage.xml

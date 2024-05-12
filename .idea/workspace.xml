@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Code coverage addition.">
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Attempting to show test coverage support in Gitlab from XML artifact.">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/coverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/coverage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -401,14 +393,6 @@
       <workItem from="1715386965437" duration="5485000" />
       <workItem from="1715468363247" duration="2382000" />
     </task>
-    <task id="LOCAL-00003" summary="Added relationship between Posts &amp; Discussions.">
-      <option name="closed" value="true" />
-      <created>1715050239667</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1715050239667</updated>
-    </task>
     <task id="LOCAL-00004" summary="Made discussions root for now.">
       <option name="closed" value="true" />
       <created>1715050391032</created>
@@ -793,7 +777,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715551175064</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Attempting to show test coverage support in Gitlab from XML artifact.">
+      <option name="closed" value="true" />
+      <created>1715551860065</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1715551860065</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -811,7 +803,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Making the cop happy with my Gemfile." />
     <MESSAGE value="Discussions &amp; posts now linked to Users. Only showing edit/destroy buttons on ones user owns. Need to confirm on delete &amp; edit actions themselves to be extra safe though." />
     <MESSAGE value="Now confirming the user owns the discussion or post on the controller level actions. Tossing them back to the discussion page if not." />
     <MESSAGE value="Added more tests to discussions_controller_test.rb to confirm behavior of being redirected back to the discussion if you are not the owner of it." />
@@ -836,7 +827,8 @@
     <MESSAGE value="Trying to get it to use the cache." />
     <MESSAGE value="Minor change just to confirm my change fixed the tests/caching." />
     <MESSAGE value="Code coverage addition." />
-    <option name="LAST_COMMIT_MESSAGE" value="Code coverage addition." />
+    <MESSAGE value="Attempting to show test coverage support in Gitlab from XML artifact." />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempting to show test coverage support in Gitlab from XML artifact." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

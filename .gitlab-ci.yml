@@ -29,4 +29,5 @@ run_tests:
   extends:
     - .base_setup
   script:
+    - bundle install
     - rails test

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Fixed broken system tests. Should probably add more surrounding the cases of not signed in though.">
-      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Trying to get Gitlab CI working.">
+      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-wal" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -696,7 +698,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715473039806</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Trying to get Gitlab CI working.">
+      <option name="closed" value="true" />
+      <created>1715545637452</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1715545637452</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -714,7 +724,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed broken system test. All tests now passing." />
     <MESSAGE value="Embedded Posts in Discussions via routes.rb. Able to now create a new post directly from a Discussion with new post button. Editing is broken. The paths change for form based on if editing or creating new...How can I get around this?" />
     <MESSAGE value="Creating new posts in discussions &amp; editing them now works as expected." />
     <MESSAGE value="Embeded Post controller and views. Allows for dynamic use of Posts endpoints still, while also having them embedded/nested in Discussions still. Very cool. Had to specify specific partial to use for rendering posts themselves, but outside of that it seems like things are automatically hooked up correctly to use the template files from embedded or not embedded. This allows me to change style/details on posts independently of how they show up in Discussions. Separated out notice &amp; errors into their own shared partials to help cleanup the templates." />
@@ -739,7 +748,8 @@
     <MESSAGE value="When showing a Role, it now lists out all users with the role." />
     <MESSAGE value="Locked rolls down so only Admins can access it. Will add functionality to add a user to roles. Or should I go and modify the user controller / generate it so I can?" />
     <MESSAGE value="Fixed broken system tests. Should probably add more surrounding the cases of not signed in though." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed broken system tests. Should probably add more surrounding the cases of not signed in though." />
+    <MESSAGE value="Trying to get Gitlab CI working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to get Gitlab CI working." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

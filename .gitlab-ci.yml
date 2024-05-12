@@ -68,11 +68,10 @@ tests_coverage:
 
 heroku_deploy:
   stage: deploy
-  image: ruby:3.3.0
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
   script:
-    - echo "Deploying to Heroku...'$HEROKU_API_KEY'"
-    - echo "https://heroku:$HEROKU_API_KEY@git.heroku.com/orangejuice.git"
-    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/orangejuice.git
-    - git push --force heroku main:main
+    - gem install dpl
+    - echo "Deploying to Heroku..."
+    - echo "Deploying app name, $HEROKU_APP_NAME, with key $HEROKU_PRODUCTION_KEY."
+    - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_PRODUCTION_KEY

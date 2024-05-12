@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Fixed broken system tests. Should probably add more surrounding the cases of not signed in though.">
+    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Trying to automate heroku deployment.">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +20,20 @@
 }]]></component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="false" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Trying to automate heroku deployment.">
+      <option name="closed" value="true" />
+      <created>1715554092937</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715554092937</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed broken system tests. Should probably add more surrounding the cases of not signed in though." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed broken system tests. Should probably add more surrounding the cases of not signed in though." />
+    <MESSAGE value="Trying to automate heroku deployment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to automate heroku deployment." />
   </component>
 </project>

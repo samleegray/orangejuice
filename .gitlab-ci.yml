@@ -65,3 +65,12 @@ tests_coverage:
       coverage_report:
         coverage_format: cobertura
         path: coverage/coverage.xml
+
+heroku_deploy:
+  stage: deploy
+  image: ruby:3.3.0
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+  script:
+    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/orangejuice.git
+    - git push --force heroku main

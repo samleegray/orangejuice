@@ -94,10 +94,10 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  database: orangejuice_production
+  database: d50t5gquag4cc5
   adapter: postgresql
   encoding: unicode
-  host: db
-  username: postgres
-  password: password
+  host: $POSTGRES_HOST
+  username: $POSTGRES_USER
+  password: $POSTGRES_PASSWORD
   pool: 5

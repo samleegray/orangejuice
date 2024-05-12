@@ -1,5 +1,5 @@
 <nav class="bg-gray-800 text-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16">
       <div class="flex items-center space-x-4">
         <%= link_to root_path do %>
@@ -15,7 +15,7 @@
             <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "bad-button" %>
           </div>
         <% else %>
-          <div class="flex items space-x-5">
+          <div class="flex items self-center space-x-5">
             <%= link_to "Sign In", new_user_session_path, class: "good-button" %>
             <%= link_to "Sign Up", new_user_registration_path, class: "good-button" %>
           </div>

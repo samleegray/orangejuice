@@ -15,7 +15,7 @@ stages:
       files:
         - Gemfile.lock
     paths:
-      - ./api/vendor/ruby
+      - ./vendor/ruby
 
 setup_dependencies:
   stage: setup
@@ -29,5 +29,4 @@ run_tests:
   extends:
     - .base_setup
   script:
-    - bundle install
     - bundle exec rake test

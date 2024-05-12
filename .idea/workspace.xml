@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Added policy.">
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Bundle install script step in run_tests.">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -768,7 +768,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715547915710</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Bundle install script step in run_tests.">
+      <option name="closed" value="true" />
+      <created>1715548320772</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1715548320772</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -786,7 +794,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created new Roles scaffolding, updated scaffolding to appear correctly like other views. Not hooked into User object yet." />
     <MESSAGE value="Removed unused fields from DB. Trying to get tests working." />
     <MESSAGE value="Simple Roles setup, tests updated to work. Posts require signing in with a user that has the admin role." />
     <MESSAGE value="Including new 'rubocop' to help me better structure my code/go by the typical standards." />
@@ -811,7 +818,8 @@
     <MESSAGE value="Rake test?" />
     <MESSAGE value="Trying to use cached info between stages." />
     <MESSAGE value="Added policy." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added policy." />
+    <MESSAGE value="Bundle install script step in run_tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bundle install script step in run_tests." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

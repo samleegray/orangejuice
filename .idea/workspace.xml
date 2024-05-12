@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Locked rolls down so only Admins can access it. Will add functionality to add a user to roles. Or should I go and modify the user controller / generate it so I can?">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/discussions_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/discussions_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/posts_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/posts_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/roles_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/roles_test.rb" afterDir="false" />
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Fixed broken system tests. Should probably add more surrounding the cases of not signed in though.">
+      <change beforePath="$PROJECT_DIR$/app/views/posts/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/new.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -691,7 +685,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715470915897</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Fixed broken system tests. Should probably add more surrounding the cases of not signed in though.">
+      <option name="closed" value="true" />
+      <created>1715473039806</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1715473039806</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -709,7 +711,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed broken unit tests. Need to fix system test." />
     <MESSAGE value="Fixed broken system test. All tests now passing." />
     <MESSAGE value="Embedded Posts in Discussions via routes.rb. Able to now create a new post directly from a Discussion with new post button. Editing is broken. The paths change for form based on if editing or creating new...How can I get around this?" />
     <MESSAGE value="Creating new posts in discussions &amp; editing them now works as expected." />
@@ -734,7 +735,8 @@
     <MESSAGE value="Successfully changed to users only having one Role, and Roles having multiple users." />
     <MESSAGE value="When showing a Role, it now lists out all users with the role." />
     <MESSAGE value="Locked rolls down so only Admins can access it. Will add functionality to add a user to roles. Or should I go and modify the user controller / generate it so I can?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Locked rolls down so only Admins can access it. Will add functionality to add a user to roles. Or should I go and modify the user controller / generate it so I can?" />
+    <MESSAGE value="Fixed broken system tests. Should probably add more surrounding the cases of not signed in though." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed broken system tests. Should probably add more surrounding the cases of not signed in though." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

@@ -10,7 +10,6 @@ module SimpleCov
    class MergedFormatter
      def format(result)
        SimpleCov::Formatter::HTMLFormatter.new.format(result)
-       SimpleCov::Formatter::JSONFormatter.new.format(result)
        SimpleCov::Formatter::CoberturaFormatter.new.format(result)
      end
    end

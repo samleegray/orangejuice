@@ -29,6 +29,5 @@ run_tests:
   extends:
     - .base_setup
   script:
-    - bundle install
     - ./bin/rails test
     - ./bin/rails test:system

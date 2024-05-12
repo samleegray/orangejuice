@@ -1,4 +1,4 @@
 # Do I need this?
-class Post < ApplicationRecord
+class Discussions::Post < ApplicationRecord
   belongs_to :discussion
 end

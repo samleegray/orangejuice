@@ -1,0 +1,32 @@
+stages:
+  - setup
+  - validation
+  - coverage
+  - deploy
+
+.base_setup:
+  image: ruby:3.3.0
+  rules:
+    - if: $CI_COMMIT_BRANCH != "main"
+  before_script:
+    - bundle config set --local path './vendor/ruby'
+  cache:
+    key:
+      files:
+        - Gemfile.lock
+    paths:
+      - ./api/vendor/ruby
+
+setup_dependencies:
+  stage: setup
+  extends:
+    - .base_setup
+  script:
+    - bundle install
+
+run_tests:
+  stage: validation
+  extends:
+    - .base_setup
+  script:
+    - rails test

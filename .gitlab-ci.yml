@@ -29,4 +29,4 @@ run_tests:
   extends:
     - .base_setup
   script:
-    - ./bin/rails test
+    - bundle exec rake test

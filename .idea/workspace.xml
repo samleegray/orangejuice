@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Got it to run normal tests, what about system tests? Do I need bundle install?">
+    <list default="true" id="8b906bd0-673e-4a0a-ac28-d5d1b6fd3edc" name="Changes" comment="Just the rails test...">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-wal" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -736,7 +738,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715546346563</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Just the rails test...">
+      <option name="closed" value="true" />
+      <created>1715546537903</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1715546537903</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -754,7 +764,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed tests, with some help from GPT." />
     <MESSAGE value="Updated look &amp; feel of the site thanks to GPT's help once again for styling purposes. New Edit &amp; Destroy buttons directly on posts." />
     <MESSAGE value="Unified theming for Discussions page. Looking good. Maybe it's time to add some Auth..." />
     <MESSAGE value="Integrated basic signup without requiring email confirmation for now. Next is to setup roles for users. Once I have that, I can try building out the Categories again and making it a &quot;real&quot; forum. Then I need to do search somehow as well...Maybe from the stuff I've been learning about indexing data in general will help?" />
@@ -779,7 +788,8 @@
     <MESSAGE value="Trying to get it to run tests..." />
     <MESSAGE value="Got it to run normal tests, what about system tests?" />
     <MESSAGE value="Got it to run normal tests, what about system tests? Do I need bundle install?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got it to run normal tests, what about system tests? Do I need bundle install?" />
+    <MESSAGE value="Just the rails test..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Just the rails test..." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/orangejuice@test_should_create_category.rcov" NAME="test_should_create_category Coverage Results" MODIFIED="1715054293156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orangejuice" />

@@ -35,7 +35,7 @@ run_tests:
     - bundle exec rake test
   artifacts:
     paths:
-      - coverage/coverage.json
+      - coverage/
 
 tests_coverage:
   stage: coverage

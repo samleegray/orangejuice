@@ -1,7 +1,8 @@
 class RolesController < ApplicationController
-  before_action :set_role, only: %i[ show edit update destroy ]
+  include Access
   before_action :authenticate_user!
-  before_action :user_is_authorized_for_post
+  before_action :user_is_admin
+  before_action :set_role, only: %i[show edit update destroy]
 
   # GET /roles or /roles.json
   def index
@@ -27,7 +28,7 @@ class RolesController < ApplicationController
 
     respond_to do |format|
       if @role.save
-        format.html { redirect_to role_url(@role), notice: "Role was successfully created." }
+        format.html { redirect_to role_url(@role), notice: 'Role was successfully created.' }
         format.json { render :show, status: :created, location: @role }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -40,7 +41,7 @@ class RolesController < ApplicationController
   def update
     respond_to do |format|
       if @role.update(role_params)
-        format.html { redirect_to role_url(@role), notice: "Role was successfully updated." }
+        format.html { redirect_to role_url(@role), notice: 'Role was successfully updated.' }
         format.json { render :show, status: :ok, location: @role }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -54,7 +55,7 @@ class RolesController < ApplicationController
     @role.destroy!
 
     respond_to do |format|
-      format.html { redirect_to roles_url, notice: "Role was successfully destroyed." }
+      format.html { redirect_to roles_url, notice: 'Role was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -68,15 +69,5 @@ class RolesController < ApplicationController
   # Only allow a list of trusted parameters through.
   def role_params
     params.require(:role).permit(:name)
-  end
-
-  def user_is_authorized_for_post
-    return if current_user.is_admin?
-
-    respond_to do |format|
-      format.html { redirect_to root_url, notice: 'You do not have access to this page.' }
-      format.json { redirect_to root_url, status: :forbidden }
-    end
-
   end
 end

@@ -1,0 +1,12 @@
+<div class="mx-auto md:w-2/3 w-full flex">
+  <div class="mx-auto">
+    <%= render partial: 'shared/notice' %>
+
+    <%= render @user %>
+
+    <%= link_to "Back to users", users_path, class: "nav-button" %>
+    <div class="inline-block ml-2">
+      <%= button_to "Destroy this user", user_path, method: :delete, class: "bad-button" %>
+    </div>
+  </div>
+</div>

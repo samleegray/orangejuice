@@ -34,8 +34,12 @@ run_tests:
   script:
     - bundle exec rake test
   artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/coverage.xml
     paths:
-      - coverage/
+        - coverage/
 
 tests_coverage:
   stage: coverage
@@ -59,12 +63,6 @@ tests_coverage:
       else
         echo "Coverage ($covered_percent%) passed the required threshold of $required_coverage%."
       fi
-  artifacts:
-    when: always
-    reports:
-      coverage_report:
-        coverage_format: cobertura
-        path: coverage/coverage.xml
 
 heroku_deploy:
   stage: deploy

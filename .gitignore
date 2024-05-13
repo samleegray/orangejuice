@@ -37,5 +37,13 @@
 /app/assets/builds/*
 !/app/assets/builds/.keep
 
+# Ignore coverage
+/coverage/*
+
+# Ignore tests
+orangejuice_test
+orangejuice_test-shm
+orangejuice_test-wal
+
 # Ignore node_modules
 /node_modules

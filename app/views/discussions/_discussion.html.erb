@@ -1,11 +1,15 @@
 <%= link_to discussion, class: "flex font-medium w-full" do %>
     <div id="<%= dom_id discussion %>" class="my-5 py-3 px-5 rounded-lg bg-gray-500 text-white w-full">
-        <p>
-          <%= discussion.title %>
-        </p>
+      <p>
+        <%= discussion.title %>
+      </p>
 
-        <p class="font-light">
-          <%= discussion.description %>
-        </p>
+      <p class="font-light">
+        <%= discussion.description %>
+      </p>
+
+      <p class="font-extralight">
+        Posted by <%= discussion.user.username %>
+      </p>
     </div>
 <% end %>

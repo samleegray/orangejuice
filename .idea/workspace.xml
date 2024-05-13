@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Still attempting to get the report to show in Gitlab.">
+    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Fixed spacing.">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -189,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715625982870</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fixed spacing.">
+      <option name="closed" value="true" />
+      <created>1715626124451</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1715626124451</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -213,6 +221,7 @@
     <MESSAGE value="Removed files that are now ignored." />
     <MESSAGE value="Attempting to show test coverage in Gitlab." />
     <MESSAGE value="Still attempting to get the report to show in Gitlab." />
-    <option name="LAST_COMMIT_MESSAGE" value="Still attempting to get the report to show in Gitlab." />
+    <MESSAGE value="Fixed spacing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed spacing." />
   </component>
 </project>

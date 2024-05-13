@@ -34,11 +34,10 @@ run_tests:
   script:
     - bundle exec rake test
   artifacts:
-    when: always
     reports:
-      junit: coverage/coverage.xml
-    paths:
-      - coverage/
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/coverage.xml
 
 tests_coverage:
   stage: coverage

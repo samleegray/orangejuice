@@ -80,8 +80,8 @@ integration_tests:
     paths:
         - coverage/
 
-integration_tests_coverage:
-  stage: initegration_test_coverage
+integration_test_coverage:
+  stage: integration_test_coverage
   script:
     - >
       if ! command -v jq &> /dev/null; then

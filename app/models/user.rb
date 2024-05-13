@@ -7,10 +7,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  def is_admin?
+  def admin?
     return unless role
 
     role.name == 'admin'
-    
   end
 end

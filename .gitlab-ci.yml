@@ -36,7 +36,7 @@ run_tests:
   artifacts:
     when: always
     reports:
-        junit: coverage/coverage.xml
+      junit: coverage/coverage.xml
     paths:
       - coverage/
 

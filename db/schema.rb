@@ -49,6 +49,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_13_141905) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["role_id"], name: "index_users_on_role_id"
+    t.index ["username"], name: "index_users_on_username", unique: true
   end
 
   add_foreign_key "discussions", "users"

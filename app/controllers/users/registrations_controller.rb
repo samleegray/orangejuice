@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Users::RegistrationsController < Devise::RegistrationsController
-  # before_action :configure_sign_up_params, only: [:create]
+  before_action :configure_sign_up_params, only: %i[create]
   # before_action :configure_account_update_params, only: [:update]
 
   # GET /resource/sign_up
@@ -13,11 +13,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def create
     super
     # Set role. If it's the very first account we set the role to Admin as we always need at least one admin.
-    resource.role = if resource.persisted? && User.all.count == 1
-                      :admin
+    resource.role = if resource.persisted? && User.count == 1
+                      Role.find_by(name: 'admin')
                     else
-                      :user
+                      Role.find_by(name: 'user')
                     end
+    resource.save
   end
 
   # GET /resource/edit

@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Users endpoint now shows a list of all users emails. Selecting a user allows you to delete them, but that only works if they have no discussions or posts. Need to figure out what I want to do if deleting a user with discussions/posts. Make the User field nullable? If null, display deleted user?">
+    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Trying to add username &amp; automatic role assignment on creation/registration.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/discussions/posts/_post.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/discussions/posts/_post.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20240513141905_add_username_to_user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20240513141905_add_username_to_user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orangejuice_test" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715609889674</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Trying to add username &amp; automatic role assignment on creation/registration.">
+      <option name="closed" value="true" />
+      <created>1715610490234</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715610490234</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -146,6 +153,7 @@
     <MESSAGE value="Fixes to some of the strange layout I saw when deployed." />
     <MESSAGE value="Customized login/signup/forgot password pages a bit. Still haven't turned on confirmation emails yet." />
     <MESSAGE value="Users endpoint now shows a list of all users emails. Selecting a user allows you to delete them, but that only works if they have no discussions or posts. Need to figure out what I want to do if deleting a user with discussions/posts. Make the User field nullable? If null, display deleted user?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Users endpoint now shows a list of all users emails. Selecting a user allows you to delete them, but that only works if they have no discussions or posts. Need to figure out what I want to do if deleting a user with discussions/posts. Make the User field nullable? If null, display deleted user?" />
+    <MESSAGE value="Trying to add username &amp; automatic role assignment on creation/registration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to add username &amp; automatic role assignment on creation/registration." />
   </component>
 </project>

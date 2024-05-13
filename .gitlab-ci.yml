@@ -38,6 +38,8 @@ run_tests:
       coverage_report:
         coverage_format: cobertura
         path: coverage/coverage.xml
+    paths:
+        - coverage/
 
 tests_coverage:
   stage: coverage

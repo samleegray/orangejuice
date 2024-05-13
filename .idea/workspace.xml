@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Trying to add username &amp; automatic role assignment on creation/registration.">
+    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Added usernames successfully &amp; have them display in discussions/posts instead of emails. Enforced username uniqueness on two levels: the user.rb model &amp; the database itself.">
+      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/access.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/discussions/posts/_post.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/discussions/posts/_post.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20240513141905_add_username_to_user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20240513141905_add_username_to_user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/roles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/roles_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_nav_bar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_nav_bar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/_user.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_user.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/.last_run.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.last_run.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/coverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/coverage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/coverage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/coverage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orangejuice_test" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="ERB File" />
+        <option value="Ruby Module" />
       </list>
     </option>
   </component>
@@ -137,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715610490234</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added usernames successfully &amp; have them display in discussions/posts instead of emails. Enforced username uniqueness on two levels: the user.rb model &amp; the database itself.">
+      <option name="closed" value="true" />
+      <created>1715612799681</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715612799681</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -154,6 +170,7 @@
     <MESSAGE value="Customized login/signup/forgot password pages a bit. Still haven't turned on confirmation emails yet." />
     <MESSAGE value="Users endpoint now shows a list of all users emails. Selecting a user allows you to delete them, but that only works if they have no discussions or posts. Need to figure out what I want to do if deleting a user with discussions/posts. Make the User field nullable? If null, display deleted user?" />
     <MESSAGE value="Trying to add username &amp; automatic role assignment on creation/registration." />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to add username &amp; automatic role assignment on creation/registration." />
+    <MESSAGE value="Added usernames successfully &amp; have them display in discussions/posts instead of emails. Enforced username uniqueness on two levels: the user.rb model &amp; the database itself." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added usernames successfully &amp; have them display in discussions/posts instead of emails. Enforced username uniqueness on two levels: the user.rb model &amp; the database itself." />
   </component>
 </project>

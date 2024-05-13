@@ -1,7 +1,8 @@
 class RolesController < ApplicationController
-  before_action :set_role, only: %i[ show edit update destroy ]
+  include Access
   before_action :authenticate_user!
-  before_action :user_is_authorized_for_post
+  before_action :user_is_admin
+  before_action :set_role, only: %i[show edit update destroy]
 
   # GET /roles or /roles.json
   def index
@@ -68,15 +69,5 @@ class RolesController < ApplicationController
   # Only allow a list of trusted parameters through.
   def role_params
     params.require(:role).permit(:name)
-  end
-
-  def user_is_authorized_for_post
-    return if current_user.admin?
-
-    respond_to do |format|
-      format.html { redirect_to root_url, notice: 'You do not have access to this page.' }
-      format.json { redirect_to root_url, status: :forbidden }
-    end
-
   end
 end

@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  include Access
+  before_action :authenticate_user!
+  before_action :user_is_admin
   before_action :set_user, except: %i[index]
 
   # GET /users or /users.json

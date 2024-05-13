@@ -10,6 +10,7 @@ one:
   created_at: <%= Time.now %>
   updated_at: <%= Time.now %>
   role: admin
+  username: admin
 
 two:
   email: anotheruser@example.com
@@ -17,3 +18,4 @@ two:
   created_at: <%= Time.now %>
   updated_at: <%= Time.now %>
   role: guest
+  username: guest

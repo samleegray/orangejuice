@@ -8,6 +8,7 @@
         <% if user_signed_in? and current_user.admin? %>
           <%= link_to 'Posts', posts_path, class: "nav-button" %>
           <%= link_to 'Roles', roles_path, class: "nav-button" %>
+          <%= link_to 'Users', users_path, class: 'nav-button' %>
         <% end %>
       </div>
       <% if user_signed_in? %>

@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Added test files to .gitignore. Renamed one test.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/coverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/coverage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/coverage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/coverage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-wal" afterDir="false" />
+    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Removed files that are now ignored.">
+      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715625291566</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Removed files that are now ignored.">
+      <option name="closed" value="true" />
+      <created>1715625529168</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715625529168</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -191,6 +194,7 @@
     <MESSAGE value="Locked down Users section like I have Posts and Roles, so only admin users can access it. However, now when trying to navigate to posts with a non-admin user I get an SSL error. This does not happen for the other endpoints. WTF?" />
     <MESSAGE value="Very minor tweaks." />
     <MESSAGE value="Added test files to .gitignore. Renamed one test." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test files to .gitignore. Renamed one test." />
+    <MESSAGE value="Removed files that are now ignored." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed files that are now ignored." />
   </component>
 </project>

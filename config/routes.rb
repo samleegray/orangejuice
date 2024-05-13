@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :roles
-  devise_for :users
+  devise_for :users, controllers: { sessions: 'users/sessions', registrations: 'users/registrations',
+                                    confirmations: 'users/confirmations', passwords: 'users/passwords' }
   resources :discussions do
     resources :posts, module: :discussions
   end

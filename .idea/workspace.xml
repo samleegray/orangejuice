@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="More system level testing. Added new steps to Gitlab CI for testing system tests now as well.">
+    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Spelling fixes.">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,11 +237,18 @@
       <option name="project" value="LOCAL" />
       <updated>1715631318681</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Spelling fixes.">
+      <option name="closed" value="true" />
+      <created>1715631392329</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1715631392329</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trying to automate heroku deployment." />
     <MESSAGE value="Try master." />
     <MESSAGE value="Attempting to figure out if the variable is being defined or not..." />
     <MESSAGE value="Trying to automate deploy, I did it manually and it started running but had failure that I fixed due to post.rb." />
@@ -265,6 +273,7 @@
     <MESSAGE value="Roles tests at 100%, have a new model level rule requiring name to be populated &amp; unique." />
     <MESSAGE value="100% code coverage." />
     <MESSAGE value="More system level testing. Added new steps to Gitlab CI for testing system tests now as well." />
-    <option name="LAST_COMMIT_MESSAGE" value="More system level testing. Added new steps to Gitlab CI for testing system tests now as well." />
+    <MESSAGE value="Spelling fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Spelling fixes." />
   </component>
 </project>

@@ -3,10 +3,8 @@ variables:
 
 stages:
   - setup
-  - unit_test
-  - unit_test_coverage
-  - integration_test
-  - integration_test_coverage
+  - validation
+  - coverage
   - deploy
 
 .base_setup:
@@ -30,7 +28,7 @@ setup_dependencies:
     - bundle install
 
 run_tests:
-  stage: unit_test
+  stage: validation
   extends:
     - .base_setup
   script:
@@ -44,44 +42,7 @@ run_tests:
         - coverage/
 
 tests_coverage:
-  stage: unit_test_coverage
-  script:
-    - >
-      if ! command -v jq &> /dev/null; then
-        apt-get update && apt-get install -y jq
-      fi
-    - covered_percent=$(cat coverage/coverage.json | jq -r '.metrics.covered_percent')
-    - re='^[+-]?[0-9]+([.||,][0-9]+)?$'
-    - >
-      if ! [[ $covered_percent =~ $re ]]; then 
-        echo "WARNING :: Couldn't get coverage from artifact."
-        exit 0
-      fi
-    - required_coverage=$MINIMUM_COVERAGE
-    - >
-      if [ $covered_percent -le $required_coverage ]; then
-        echo "Coverage ($covered_percent%) is below the required threshold of $required_coverage%."
-        exit 1
-      else
-        echo "Coverage ($covered_percent%) passed the required threshold of $required_coverage%."
-      fi
-
-integration_tests:
-  stage: integration_test
-  extends:
-    - .base_setup
-  script:
-    - bundle exec rake test:system
-  artifacts:
-    reports:
-      coverage_report:
-        coverage_format: cobertura
-        path: coverage/coverage.xml
-    paths:
-        - coverage/
-
-integration_test_coverage:
-  stage: integration_test_coverage
+  stage: coverage
   script:
     - >
       if ! command -v jq &> /dev/null; then

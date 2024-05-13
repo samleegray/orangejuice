@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Locked down Users section like I have Posts and Roles, so only admin users can access it. However, now when trying to navigate to posts with a non-admin user I get an SSL error. This does not happen for the other endpoints. WTF?">
+    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Very minor tweaks.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/discussions/_discussion.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/discussions/_discussion.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/coverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/coverage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/coverage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/coverage.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orangejuice_test-shm" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orangejuice_test-wal" beforeDir="false" afterPath="$PROJECT_DIR$/orangejuice_test-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/posts_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/posts_controller_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715613472914</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Very minor tweaks.">
+      <option name="closed" value="true" />
+      <created>1715615258082</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715615258082</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -175,6 +183,7 @@
     <MESSAGE value="Trying to add username &amp; automatic role assignment on creation/registration." />
     <MESSAGE value="Added usernames successfully &amp; have them display in discussions/posts instead of emails. Enforced username uniqueness on two levels: the user.rb model &amp; the database itself." />
     <MESSAGE value="Locked down Users section like I have Posts and Roles, so only admin users can access it. However, now when trying to navigate to posts with a non-admin user I get an SSL error. This does not happen for the other endpoints. WTF?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Locked down Users section like I have Posts and Roles, so only admin users can access it. However, now when trying to navigate to posts with a non-admin user I get an SSL error. This does not happen for the other endpoints. WTF?" />
+    <MESSAGE value="Very minor tweaks." />
+    <option name="LAST_COMMIT_MESSAGE" value="Very minor tweaks." />
   </component>
 </project>

@@ -274,137 +274,6 @@
           null
         ]
       },
-      "/Users/samuelgray/Projects/rails/orangejuice/app/controllers/roles_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          2,
-          1,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          2,
-          1,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          2,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          4,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/samuelgray/Projects/rails/orangejuice/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/samuelgray/Projects/rails/orangejuice/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          1,
-          12,
-          8,
-          null,
-          4,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/samuelgray/Projects/rails/orangejuice/app/helpers/discussions_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/samuelgray/Projects/rails/orangejuice/app/helpers/posts_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/samuelgray/Projects/rails/orangejuice/app/helpers/roles_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/samuelgray/Projects/rails/orangejuice/app/controllers/concerns/access.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          13,
-          null,
-          1,
-          2,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/samuelgray/Projects/rails/orangejuice/app/controllers/posts_controller.rb": {
         "lines": [
           1,
@@ -485,6 +354,60 @@
           null,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/samuelgray/Projects/rails/orangejuice/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/samuelgray/Projects/rails/orangejuice/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          1,
+          12,
+          8,
+          null,
+          4,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/samuelgray/Projects/rails/orangejuice/app/helpers/discussions_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/samuelgray/Projects/rails/orangejuice/app/helpers/posts_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/samuelgray/Projects/rails/orangejuice/app/helpers/roles_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/samuelgray/Projects/rails/orangejuice/app/controllers/concerns/access.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          13,
+          null,
+          1,
+          2,
+          1,
+          null,
+          null,
           null,
           null
         ]
@@ -591,6 +514,83 @@
           null
         ]
       },
+      "/Users/samuelgray/Projects/rails/orangejuice/app/controllers/roles_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          2,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          4,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/samuelgray/Projects/rails/orangejuice/app/controllers/discussions_controller.rb": {
         "lines": [
           1,
@@ -686,6 +686,6 @@
         ]
       }
     },
-    "timestamp": 1715613623
+    "timestamp": 1715625119
   }
 }

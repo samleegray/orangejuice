@@ -13,7 +13,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test 'should not get index' do
+  test 'should not get index not signed in' do
     get posts_url
     assert_redirected_to new_user_session_url
   end

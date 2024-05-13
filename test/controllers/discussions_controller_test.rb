@@ -26,6 +26,14 @@ class DiscussionsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to discussion_url(Discussion.last)
   end
 
+  test 'should not create discussion' do
+    assert_no_difference('Discussion.count') do
+      post discussions_url, params: { discussion: { description: @discussion.description, title: @discussion.title } }
+    end
+
+    assert_response :unprocessable_entity
+  end
+
   test 'should show discussion' do
     sign_in users(:one)
     get discussion_url(@discussion)
@@ -44,8 +52,17 @@ class DiscussionsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should update discussion' do
-    patch discussion_url(@discussion), params: { discussion: { description: @discussion.description, title: @discussion.title } }
+    sign_in users(:one)
+    patch discussion_url(@discussion),
+          params: { discussion: { description: @discussion.description, title: @discussion.title } }
     assert_redirected_to discussion_url(@discussion)
+  end
+
+  test 'should not update discussion' do
+    sign_in users(:one)
+    patch discussion_url(@discussion),
+          params: { discussion: { description: '', title: '' } }
+    assert_response :unprocessable_entity
   end
 
   test 'should destroy discussion' do

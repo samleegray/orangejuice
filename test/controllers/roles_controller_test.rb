@@ -51,7 +51,8 @@ class RolesControllerTest < ActionDispatch::IntegrationTest
 
   test 'should not update role' do
     patch role_url(@role), params: { role: { name: '' } }
-    assert_redirected_to role_url(@role)
+
+    assert_response :unprocessable_entity
   end
 
   test 'should destroy role' do

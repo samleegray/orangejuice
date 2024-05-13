@@ -13,6 +13,12 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test 'should show' do
+    sign_in users(:one)
+    get post_url(@post)
+    assert_response :success
+  end
+
   test 'should not get index not signed in' do
     get posts_url
     assert_redirected_to new_user_session_url
@@ -30,14 +36,22 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test 'should create post' do
+  test 'should create post alone' do
     sign_in users(:one)
     assert_difference('Post.count') do
-      post discussion_posts_url(discussions(:one)), params: { post: { text: @post.text,
-                                                                      discussion_id: discussions(:one).id } }
+      post posts_url, params: { post: { text: @post.text, discussion_id: discussions(:one).id } }
     end
 
     assert_redirected_to discussion_url(discussions(:one))
+  end
+
+  test 'should not create post alone' do
+    sign_in users(:one)
+    assert_no_difference('Post.count') do
+      post posts_url, params: { post: { text: '', discussion_id: discussions(:one).id } }
+    end
+
+    assert_response :unprocessable_entity
   end
 
   test 'should not show post' do
@@ -48,6 +62,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
   test 'should show post' do
     get discussion_post_url(@post.discussion, @post)
     assert_response :success
+    assert_select 'title', "#{@post.discussion.title} | Orangejuice"
   end
 
   test 'should get edit' do
@@ -60,6 +75,12 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     sign_in users(:one)
     patch post_url(@post), params: { post: { text: @post.text } }
     assert_redirected_to discussion_url(@post.discussion)
+  end
+
+  test 'should not update post' do
+    sign_in users(:one)
+    patch post_url(@post), params: { post: { text: '' } }
+    assert_response :unprocessable_entity
   end
 
   test 'should destroy post' do

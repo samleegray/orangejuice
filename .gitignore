@@ -38,7 +38,7 @@
 !/app/assets/builds/.keep
 
 # Ignore coverage
-/coverage
+/coverage/*
 
 # Ignore tests
 orangejuice_test

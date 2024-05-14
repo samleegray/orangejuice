@@ -5,7 +5,7 @@
         <%= post.text %>
       </p>
       <p>
-        Posted <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.username %>
+        Posted <%= time_ago_in_words(post.created_at) %> ago by <%= username(post.user) %>
       </p>
       <% if user_signed_in? and post.user.id == current_user.id %>
         <div id="post-actions" class="flex justify-end space-x-5">

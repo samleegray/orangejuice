@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Making it run on main.">
-      <change afterPath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Can now nullify all posts/discussions when deleting a user. Need to handle it in the UI though.">
+      <change beforePath="$PROJECT_DIR$/app/views/discussions/_discussion.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/discussions/_discussion.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,11 +254,18 @@
       <option name="project" value="LOCAL" />
       <updated>1715633727966</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Can now nullify all posts/discussions when deleting a user. Need to handle it in the UI though.">
+      <option name="closed" value="true" />
+      <created>1715658077999</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1715658077999</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Attempting to figure out if the variable is being defined or not..." />
     <MESSAGE value="Trying to automate deploy, I did it manually and it started running but had failure that I fixed due to post.rb." />
     <MESSAGE value="Still trying." />
     <MESSAGE value="Echo the full string for heroku deploy GIT." />
@@ -286,6 +290,7 @@
     <MESSAGE value="More system level testing. Added new steps to Gitlab CI for testing system tests now as well." />
     <MESSAGE value="Spelling fixes." />
     <MESSAGE value="Making it run on main." />
-    <option name="LAST_COMMIT_MESSAGE" value="Making it run on main." />
+    <MESSAGE value="Can now nullify all posts/discussions when deleting a user. Need to handle it in the UI though." />
+    <option name="LAST_COMMIT_MESSAGE" value="Can now nullify all posts/discussions when deleting a user. Need to handle it in the UI though." />
   </component>
 </project>

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Spelling fixes.">
-      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+    <list default="true" id="54b27a40-6997-4f1e-b163-943f4d153062" name="Changes" comment="Making it run on main.">
+      <change afterPath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,7 @@
       <list>
         <option value="ERB File" />
         <option value="Ruby Module" />
+        <option value="Minitest" />
       </list>
     </option>
   </component>
@@ -29,6 +33,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultRubyCreateTestTemplate": "Minitest",
     "git-widget-placeholder": "main",
     "node.js.selected.package.tslint": "(autodetect)",
     "ruby.structure.view.model.defaults.configured": "true"
@@ -244,11 +249,18 @@
       <option name="project" value="LOCAL" />
       <updated>1715631392329</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Making it run on main.">
+      <option name="closed" value="true" />
+      <created>1715633727966</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1715633727966</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Try master." />
     <MESSAGE value="Attempting to figure out if the variable is being defined or not..." />
     <MESSAGE value="Trying to automate deploy, I did it manually and it started running but had failure that I fixed due to post.rb." />
     <MESSAGE value="Still trying." />
@@ -273,6 +285,7 @@
     <MESSAGE value="100% code coverage." />
     <MESSAGE value="More system level testing. Added new steps to Gitlab CI for testing system tests now as well." />
     <MESSAGE value="Spelling fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Spelling fixes." />
+    <MESSAGE value="Making it run on main." />
+    <option name="LAST_COMMIT_MESSAGE" value="Making it run on main." />
   </component>
 </project>

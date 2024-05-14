@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_13_141905) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_14_033717) do
   create_table "discussions", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id", null: false
+    t.integer "user_id"
     t.index ["user_id"], name: "index_discussions_on_user_id"
   end
 
@@ -25,7 +25,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_13_141905) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "discussion_id", null: false
-    t.integer "user_id", null: false
+    t.integer "user_id"
     t.index ["discussion_id"], name: "index_posts_on_discussion_id"
     t.index ["user_id"], name: "index_posts_on_user_id"
   end

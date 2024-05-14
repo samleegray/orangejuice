@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class UsersController < ApplicationController
   include Access
   before_action :authenticate_user!
@@ -10,7 +11,7 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
-  # GET /discussions/1 or /discussions/1.json
+  # GET /users/1 or /users/1.json
   def show
     @page_title = @user.email
   end
@@ -69,9 +70,9 @@ class UsersController < ApplicationController
   private
 
   # Only allow a list of trusted parameters through.
-  def user_params
-    params.require(:user)#.permit(:title, :description)
-  end
+  # def user_params
+  #   params.require(:user)#.permit(:title, :description)
+  # end
 
   def set_user
     @user = User.find(params[:id])
